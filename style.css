@@ -1,0 +1,319 @@
+/* 리셋 reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{text-decoration: none; color: inherit; outline: none;}
+/*  서 체  */
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*  서체 끝 * /
+/* header */
+/* 네비게이션 메뉴 */
+header{position: fixed; width: 100%; height:70px ;
+    background-color: rgba(0,0,0,0.7);}
+.top{width: 1366px; height: 70px; margin: 0 auto;}
+.logo{float: left;width:66px ;}
+.logo img{width:100% ;}
+
+.menu{float: left; margin-left: 270px;}
+.menu>ul>li{float: left; margin: 0  24px;color: #f2f2f2;
+    text-align: center;line-height: 70px;}
+
+
+
+/*메인 배너 */
+#mainbanner{width: 100%;height:640px ;
+    background-color: rgb(113, 112, 114);
+        overflow: hidden;}
+#mainbanner img{width: 100%; }
+
+
+/* mainbanner 미디어쿼리       */
+
+@media screen and (max-width:1600px) {
+    #mainbanner{width: 100%;height:500px ; background-color: rgb(113, 112, 114);  overflow: hidden;}
+    #mainbanner img{width: 100%; }
+}
+
+
+@media screen and (max-width:1366px) {
+    #mainbanner{width: 100%;height:460px ; background-color: rgb(113, 112, 114);  overflow: hidden;}
+    #mainbanner img{width: 110%; margin-left:-8% ;}
+}
+
+
+@media screen and (max-width:1024px) {
+    #mainbanner{width: 100%;height:400px ; background-color: rgb(113, 112, 114);  overflow: hidden;}
+    #mainbanner img{width: 120%; margin-left:-10% ;}
+}
+
+
+@media screen and (max-width:800px) {
+    #mainbanner{width: 100%;height:260px ; background-color: rgb(113, 112, 114);  overflow: hidden;}
+    #mainbanner img{width: 140%; margin-left:-27% ;}
+}
+
+
+
+
+/* section1  Visual Thinking */
+
+#section1{padding-top:70px;width:100%;height:500px;}
+
+.item-title{font-family: 'Comfortaa', cursive;width:400px;margin: 0 auto;
+    text-align:center;font-size:36px;
+    font-weight:600;color: #555;}
+.item-title-underbar{width:70px;height:3px;
+    margin:22px auto 66px auto;background-color: maroon;}
+
+.item-set{margin: 0 auto;width:1140px ;height:500px;}
+.item1{float: left;margin: 0 19px;width:342px ;height:500px;}
+.item1-title{ font-family: 'Comfortaa', cursive; width:342px;text-align:center;
+    font-size: 21px; font-weight: 600;color: #555;}
+.item1-pics{margin-top:20px;width:342px;height:180px;overflow:hidden;}
+.item1-pics img{width:100%;}
+.item1-txt{margin-top:20px;width:342px;text-align:center;}
+
+/* section1 미디어쿼리       */
+
+@media screen and (max-width:800px) {
+    .item-set{margin: 0 auto;width:100% ;height:500px;}
+    .item1{float: none;margin: 0 auto;width:342px ;height:350px;}
+    #section1{padding-top:70px;width:100%;height:1300px;}
+    
+}
+
+
+
+
+
+
+/* section2  Our Story */
+#section2{width:100%;height:700px;overflow:hidden;}
+.s2-left{float:right;width:50%;height:700px;overflow:hidden;}
+.s2-left img{width:130%;}
+.s2-right{float:right;width:40%;height:500px;
+    background-color: #ccc; padding:100px 5%;}
+.item-title2{font-family: 'Comfortaa', cursive;width:400px;
+        font-size:36px;
+        font-weight:600;color: #555;}
+.item-title-underbar2{width:70px;height:3px;
+        margin:22px 0 66px 0;background-color: maroon;}
+.item2-txt{margin-top:20px;width:70%;}
+
+/* section2 미디어쿼리       */
+
+@media screen and (max-width:800px) {
+    #section2{width:100%;height:1300px;overflow:hidden;}
+    .s2-left{float: none;margin: 0 auto;width:100% ;height:60%;}
+    .s2-right{float: none;margin: 0 auto;width:100% ;height:40%;}
+    
+}
+
+
+
+
+/* section3 Menu Lecture */
+#section3{padding-top:120px;width:100%;height:1000px ;}
+.item3-set{width:1102px;height: 1000px;
+    margin: 0 auto;}
+.item3-set-up{width:1102px;height: 500px;}
+.item3-set-down{width:1102px;height: 500px;}
+
+.item3{width:511px;height: 580px;float: left;
+    padding:10px 20px;}
+.item3-title{font-family: 'Comfortaa', cursive;width:500px;
+        margin: 0 auto;text-align: center;font-size:24px;
+        font-weight:600;color: #555;}
+.item3-title-underbar{width:70px;height:3px;
+        margin:14px auto 30px auto;background-color: maroon;}
+
+.item3-list{width: 94%;background-color: aquamarine;}
+.item3-txt{float: left;width: 85%;}
+.item3-price{float: left;width: 15%;text-align: right;}
+.item3-list h3{color: #555;font-size: 17px;font-weight: 600;
+font-family: 'Comfortaa';}
+.item3-list p{color: #555;font-size: 15px;
+    margin: 15px 0 40px 0;line-height: 20px;}
+.item3-list p .time-fx{color: rgb(189, 20, 138);
+    font-weight:600;font-size:12px ;}
+
+/* section3 미디어쿼리       */
+
+@media screen and (max-width:800px) {
+    #section3{padding-top:120px;width:100%;height:1000px ;}
+    .item3-set{width:100%;height: 1000px;
+    margin: 0 auto;}
+    .item3-set-up{width:100%;height: 500px;}
+    .item3{width:100%;height: 580px;float: none;
+        padding:10px 20px;}
+    
+}
+
+
+
+/* section4 */
+#section4{width: 100%;height:160px ;}
+.s4-img{width: 25%;height: 160px;float: left;}
+.s4-img img{width: 120%;overflow: hidden;text-align: center;}
+
+/* section4 미디어쿼리       */
+
+ @media screen and (max-width: 800px) {
+    #section4{width: 100%;height:1500px ;}
+.s4-img{width: 100%; height: 420px;  float: none;overflow: hidden;}
+.s4-img img{width: 120%;text-align: center;}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* section5 */
+#section5{padding-top:70px ;width: 100%;height:800px;}
+.s5-wrap{width: 70%;height: 500px; margin: 120px auto;}
+.s5-left{width: 50%;height: 500px;float:left;overflow: hidden;}
+/*s5-right{width: 50%;height: 360px;}*/
+
+
+
+/* section5 미디어쿼리       */
+
+@media screen and (max-width:800px) {
+
+
+    #section5{padding-top:70px ;width: 100%;height:1000px;overflow: hidden;}
+    .s5-left{width:100%;height:100%;float: none;overflow: hidden;}
+    .s5-left img{width: 100%;}
+
+    
+    
+}
+
+
+
+
+
+
+
+
+/* section6 */
+#section6{padding-top:70px ;width: 100%;height:500px ;}
+.s6-info{width:1104px;height:180px ;
+margin:140px auto 70px auto;overflow: hidden; }
+.item4{width:300px;height:180px ;float: left; }
+.item4-1{width:300px;height:180px ;margin-right:102px;
+        margin-left:102px;float: left; }
+.item-title4{text-align: center;color: #999;font-size: 20px;}
+.item-title-underbar4{margin: 22px auto;width: 45px;
+    height:2px ;background-color: rgb(209, 0, 0);}
+.item-txt4{text-align: center;color: #777;
+    font-size: 14px;line-height: 24px;}
+    /* section6 미디어쿼리       */
+
+@media screen and (max-width:800px) {
+
+
+    #section6{padding-top:70px ;width: 100%;height:600px;overflow: hidden;}
+    .s6-info{width:100%;height:600px; margin:0 auto; }
+    .item4{width:300px;height:180px ;float: none; margin:0 auto;}
+    .item4-1{width:300px;height:180px ; float: none;margin:0 auto; }
+
+    
+    
+}
+
+
+
+
+/* footer */
+footer{width:100% ;height:200px ;background-color: #1c1c1c;}
+.copy{width: 80%;margin: 70px auto;color: #f2f2f2;
+        text-align: center;height: 100px;
+    padding-top: 90px;}
+
+    /* footer 미디어쿼리       */
+
+    @media screen and (max-width:800px) {
+
+        footer{width:100% ;height:200px ;background-color: #1c1c1c;}
+        .copy{width: 80%;margin: 0 auto;color: #f2f2f2;
+                text-align: center;height: 100px;
+            padding-top: 90px;}
+        
+        
+    }
+
+
+
+    /* ==================== */
+
+
+
+
+
+
+
+
+
+
